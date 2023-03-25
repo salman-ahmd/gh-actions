@@ -1,0 +1,12 @@
+name: First Workflow # name of the workflow
+
+on: workflow_dispatch # event trigger -- manually start workflow 
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest # runner - env use (github hosted runners - ubuntu, windows, macOS)
+    steps:
+      - name: Print greeting
+        run: echo "Hello World Running greeting step"
+      - name: Print Goodbye
+        run: echo "GoodBye! Done printing."
